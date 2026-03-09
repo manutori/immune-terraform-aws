@@ -17,15 +17,28 @@ Usaremos **GitHub Codespaces**, que hoy viene con un superpoder extra: trae la *
 
 ---
 
-## 🔐 2. Autenticación en AWS (¡NUEVO!)
+## 🔑 2. Crea tus credenciales en AWS (NUEVO)
 
-Para que Terraform pueda crear recursos, necesita tus "llaves". Abre la terminal integrada y ejecuta:
+Antes de ir a la terminal, necesitamos generar las llaves de acceso en tu cuenta de AWS.
+
+1. Inicia sesión en la **Consola de AWS**.
+2. Haz clic en el nombre de tu usuario (arriba a la derecha) y selecciona **Security credentials** (Credenciales de seguridad).
+3. Haz scroll hacia abajo hasta la sección **Access keys** y haz clic en **Create access key**.
+4. Selecciona el caso de uso **Command Line Interface (CLI)**, marca la casilla de confirmación abajo y dale a **Next**.
+5. (Opcional) Ponle una etiqueta, por ejemplo: `terraform-clase`. Dale a **Create access key**.
+6. ⚠️ **¡No cierres esta pantalla!** Aquí tienes tu *Access key* y tu *Secret access key*. El Secret solo se muestra una vez.
+
+---
+
+## 🔐 3. Autenticación en tu entorno
+
+Ahora que tienes tus llaves, vuelve a la pestaña de tu GitHub Codespace. Abre la terminal integrada y ejecuta:
 
     aws configure
 
-Rellena los 4 datos con las credenciales del profesor:
-1. **AWS Access Key ID**: `TU_ACCESS_KEY`
-2. **AWS Secret Access Key**: `TU_SECRET_KEY`
+Rellena los 4 datos cuando te los pida:
+1. **AWS Access Key ID**: `[Pega tu Access Key aquí]`
+2. **AWS Secret Access Key**: `[Pega tu Secret Key aquí]`
 3. **Default region name**: `eu-west-1`
 4. **Default output format**: `json`
 
@@ -33,7 +46,7 @@ Rellena los 4 datos con las credenciales del profesor:
 
 ---
 
-## ✅ 3. Comprueba que todo funciona
+## ✅ 4. Comprueba que todo funciona
 
 Verifica tu conexión lanzando este comando en la terminal:
 
@@ -43,7 +56,7 @@ Verifica tu conexión lanzando este comando en la terminal:
 
 ---
 
-## 🎯 4. ¡A por la Demo!
+## 🎯 5. ¡A por la Demo!
 
 Cuando estés listo, haz clic en el siguiente enlace para abrir la guía del laboratorio:
 
