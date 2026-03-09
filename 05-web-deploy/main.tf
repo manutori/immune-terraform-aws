@@ -47,8 +47,8 @@ resource "aws_s3_bucket_website_configuration" "web_config" {
 resource "aws_s3_object" "index" {
   bucket       = aws_s3_bucket.web.bucket
   key          = "index.html"
-  source       = "${path.module}/../web_content/index.html"
-  etag         = filemd5("${path.module}/../web_content/index.html")
+  source       = "${path.module}/web_content/index.html"
+  etag         = filemd5("${path.module}/web_content/index.html")
   content_type = "text/html"
 }
 
