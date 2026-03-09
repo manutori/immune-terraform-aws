@@ -1,0 +1,31 @@
+# --------------------------------------------------------------------------
+# TERRAFORM GITIGNORE
+# --------------------------------------------------------------------------
+
+# Local .terraform directories (plugins and modules)
+**/.terraform/*
+
+# .tfstate files (NUNCA SUBIR EL ESTADO A GITHUB)
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Excluir archivos de variables (.tfvars) ya que suelen contener contraseñas o secretos
+*.tfvars
+*.tfvars.json
+
+# Ignorar archivos de override locales
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignorar archivos de planes de ejecución
+*.tfplan
+
+# Ignorar configuración de la CLI
+.terraformrc
+terraform.rc
